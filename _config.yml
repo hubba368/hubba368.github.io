@@ -1,5 +1,11 @@
-name: Elliott Bowman
-markdown: kramdown
+# Site settings
+title:
+email:
+author:
+description:
+url:
 
+# Build settings
+permalink: :title/
 sass:
   sass_dir: css
