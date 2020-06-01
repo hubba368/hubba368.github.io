@@ -4,7 +4,11 @@
 @import 'bootstrap/bootstrap';
 
 .jumbotron{
-    background: #333;
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
   }
 
 .img1 {
