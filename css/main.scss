@@ -14,6 +14,15 @@
   }
 
 
+/*buttons*/
+.custom_button {
+    font-size: 18px;
+}
+.custom_button:hover{
+  background: transparent;
+  color:black;
+}
+
   /*custom classes */
 .mobile_fullwidth > img {
     display: none;
