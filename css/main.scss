@@ -20,6 +20,14 @@
 }
 .custom_button:hover{
   background: transparent;
+  color:white;
+}
+.btn_black{
+  background: rgba(0,0,0,0.9);
+  color:white;
+  border:1px solid black;
+}
+.btn_black:hover {
   color:black;
 }
 
