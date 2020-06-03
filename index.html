@@ -98,9 +98,9 @@ title: Elliott Bowman
 										<div class="pt-3">
 											<p>The game itself was developed for PC in Unreal Engine 4, with a mixture of C++ and UE4 Blueprints. We managed to win the **'Playground Games Best Game Award'** and the **'Best Art Direction'** awards at the Games@Derby Expo 2018.</p>
 											<h5 style="text-align:center">Images</h5>
-											<div class="row" id="vitriolicGallery">
-												<div class="col-12 col-sm-6 col-lg-3"><img id="img1" src="assets/images/vitriolic1.png" data-toggle="modal" data-target="#imageModal" height="50px" class="img-fluid"></div>
-												<div class="col-12 col-sm-6 col-lg-3"><img id="img2" src="assets/images/vitriolic2.png" data-toggle="modal" data-target="#imageModal" height="50px" class="img-fluid"></div>
+											<div class="row" id="vitriolicGallery" data-toggle="modal" data-target="#imageModal">
+												<div class="col-12 col-sm-6 col-lg-3"><img id="img1" src="assets/images/vitriolic1.png" height="50px" class="img-fluid"></div>
+												<div class="col-12 col-sm-6 col-lg-3"><img id="img2" src="assets/images/vitriolic2.png" height="50px" class="img-fluid"></div>
 											</div>											
 										</div>
 									</div>
@@ -206,7 +206,7 @@ title: Elliott Bowman
 				<div class="modal-dialog">
 				  <div class="modal-content">
 					<div class="modal-body">							  
-						<img class="img-fluid" src="">
+						<img class="img-fluid" src="">		  
 					<div class="modal-footer">
 						<!--<p>test image description.</p>-->
 					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -225,16 +225,5 @@ title: Elliott Bowman
   <section id="other_section">
 	  <h1 class="section_title">Other</h1>
 
-
-  </section>
-
-  <script>
-	  $(document).ready(function () {
-		$('#imageModal').on('show.bs.modal', function(e) {
-			var image = $(e.relatedTarget).attr('src');  
-			$(".img-fluid").attr('src', image);
-  });
-	  });
-  </script>
 </body>
 </html>
