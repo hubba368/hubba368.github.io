@@ -25,6 +25,7 @@
     font-size: 17px;
 }
 
+/*hide stuff depending on screen size*/
 @media only screen and (max-width: 991px) {
   .desktop_only {
       display: none;
