@@ -98,9 +98,9 @@ title: Elliott Bowman
 										<div class="pt-3">
 											<p>The game itself was developed for PC in Unreal Engine 4, with a mixture of C++ and UE4 Blueprints. We managed to win the **'Playground Games Best Game Award'** and the **'Best Art Direction'** awards at the Games@Derby Expo 2018.</p>
 											<h5 style="text-align:center">Images</h5>
-											<div class="row" id="vitriolicGallery" data-toggle="modal" data-target="#imageModal">
-												<div class="col-12 col-sm-6 col-lg-3"><img id="img1" src="assets/images/vitriolic1.png" height="50px" class="img-fluid"></div>
-												<div class="col-12 col-sm-6 col-lg-3"><img id="img2" src="assets/images/vitriolic2.png" height="50px" class="img-fluid"></div>
+											<div class="row">
+												<div class="col-12 col-sm-6 col-lg-6"><img id="img1" src="assets/images/vitriolic1.png" height="50px" class="img-fluid"></div>
+												<div class="col-12 col-sm-6 col-lg-6"><img id="img2" src="assets/images/vitriolic2.png" height="50px" class="img-fluid"></div>
 											</div>											
 										</div>
 									</div>
@@ -202,22 +202,6 @@ title: Elliott Bowman
 			
 		</div>
 		
-		<div class="modal in" id="imageModal" tabindex="-1" role="dialog">
-				<div class="modal-dialog modal-lg">
-				  <div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-						<h4 class="modal-title">View Image</h4>
-					</div>					  
-					<div class="modal-body">							  
-						<div id="imgViewer" style="overflow-x: scroll;">	  
-					<div class="modal-footer">
-						<!--<p>test image description.</p>-->
-					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
   </section>     
 		
   <section id="software_section">
@@ -232,14 +216,5 @@ title: Elliott Bowman
 
   </section>
 
-  <script>
-$('img').on('click', function(e) {
-  $('#imgViewer').html('').append( $(e.currentTarget).clone() )
-  $('#imageModal').modal('show')
-});
-$('img').each(function(i,e) {
-  $(e).wrap('<div class="img-wrapper"></div>')
-});  
-  </script>
 </body>
 </html>
