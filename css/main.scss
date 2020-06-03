@@ -13,7 +13,15 @@
     color: black;
 }
 
-ol.carousel-indicators li {
+a.carousel-control-prev {
+  background: black;
+}
+
+a.carousel-control-next {
+  background: black;
+}
+
+ol.carousel-indicators li.active {
   background: black;
 }
 
