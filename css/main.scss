@@ -13,6 +13,7 @@
     color: black;
 }
 
+/*carousels*/
 a.carousel-control-prev {
   background: black;
 }
@@ -25,6 +26,19 @@ ol.carousel-indicators li.active {
   background: black;
 }
 
+/*project galleries*/
+#vitriolicGallery {
+  img {
+    height: 75vw;
+    object-fit: cover;
+    @media (min-width: 576px) {
+      height: 35vw;
+    }
+    @media (min-width: 992px) {
+      height: 18vw;
+    }
+  }
+}
 
 /*buttons*/
 .custom_button {
