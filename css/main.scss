@@ -3,15 +3,39 @@
 
 @import 'bootstrap/bootstrap';
 
+/*bootstrap overrides */
 .jumbotron{
     border-radius: 0;
     margin-top: 0;
     margin-bottom: 0;
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+    color: black;
   }
 
-.vitriolic {
-    background: url("assets/images/vitriolic1.png") center no-repeat;
-    background-size: cover;
+
+  /*custom classes */
+.mobile_fullwidth > img {
+    display: none;
+}
+.mobile_fullwidth > h1 {
+    font-size: 30px;
+}
+.mobile_fullwidth > h5 {
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 991px) {
+  .desktop_only {
+      display: none;
   }
+  .mobile_fullwidth {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mobile_only {
+      display: none;
+  }
+}
