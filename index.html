@@ -236,10 +236,10 @@ title: Elliott Bowman
 $('img').on('click', function(e) {
   $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-fluid').removeClass('img-thumbnail') )
   $('#imageModal').modal('show')
-  $('img').each(function(i,e) {
+});
+$('img').each(function(i,e) {
   $(e).wrap('<div class="img-wrapper"></div>')
-})
-})  
+});  
   </script>
 </body>
 </html>
