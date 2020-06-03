@@ -234,7 +234,7 @@ title: Elliott Bowman
 
   <script>
 $('img').on('click', function(e) {
-  $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-fluid').removeClass('img-thumbnail') )
+  $('#imgViewer').html('').append( $(e.currentTarget).clone() )
   $('#imageModal').modal('show')
 });
 $('img').each(function(i,e) {
