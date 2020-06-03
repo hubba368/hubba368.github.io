@@ -202,7 +202,7 @@ title: Elliott Bowman
 			
 		</div>
 		
-		<div class="modal in" id="imageModal" tabindex="-1" role="dialog" style="display: block;">
+		<div class="modal in" id="imageModal" tabindex="-1" role="dialog">
 				<div class="modal-dialog modal-lg">
 				  <div class="modal-content">
 					<div class="modal-header">
@@ -233,7 +233,13 @@ title: Elliott Bowman
   </section>
 
   <script>
-  
+$('img').on('click', function(e) {
+  $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-fluid').removeClass('img-thumbnail') )
+  $('#imageModal').modal('show')
+});
+$('img').each(function(i,e) {
+  $(e).wrap('<div class="img-wrapper"></div>')
+});  
   </script>
 </body>
 </html>
