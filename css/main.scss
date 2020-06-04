@@ -12,8 +12,8 @@ body {
     border-radius: 0;
     margin-top: 0;
     margin-bottom: 0;
-    border-top: 1px dashed white;
-    border-bottom: 1px dashed white;
+    /*border-top: 1px dashed white;
+    border-bottom: 1px dashed white;*/
     background: grey;
 }
 
@@ -61,7 +61,7 @@ ol.carousel-indicators li.active {
 }
 
 .divider {
-  fill: white;
+  fill: grey;
   height: 70px;
   width: 100%;
 }
