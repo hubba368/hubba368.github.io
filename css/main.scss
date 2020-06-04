@@ -3,6 +3,10 @@
 
 @import 'bootstrap/bootstrap';
 
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
 /*bootstrap overrides */
 .jumbotron{
     border-radius: 0;
@@ -50,7 +54,8 @@ ol.carousel-indicators li.active {
   }
 }
 
-h1 {
+.section_title {
+  margin-top: 50px;
   background: grey;
 }
 
