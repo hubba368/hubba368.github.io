@@ -5,3 +5,12 @@
 <script src="assets/js/scrollreveal.min.js"></script>
 <script src="assets/js/youtube-optimise.js"></script>
 
+<div class ="footer-wrap">
+    <div class="buttons">
+        <nav>
+            {% for item in site.data.settings.footer %}
+            <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+            {% endfor %}
+        </nav>
+    </div>
+</div>
