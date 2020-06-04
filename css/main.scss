@@ -26,6 +26,11 @@ a.carousel-control-next {
   width:86px;
 }
 
+ol.carousel-indicators {
+  background: white;
+  height:24px;
+}
+
 ol.carousel-indicators li.active {
   background: black;
   height:24px;
