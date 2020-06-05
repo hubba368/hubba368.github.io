@@ -24,11 +24,52 @@ body {
 /*jumbotron backgrounds*/
 .vitriolic {
   background: grey;
-
+  transition: background .5s ease-out;
 }
 .vitriolic:focus-within {
   background: url("../assets/images/vitriolicbackground.png") center no-repeat;
   background-size: cover;
+  transition: background .5s ease-in;
+}
+
+.rimworld {
+  background: grey;
+  transition: background .5s ease-out;
+}
+.rimworld:focus-within {
+  background: url("../assets/images/rimworldbackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
+}
+
+.Tensecdung {
+  background: grey;
+  transition: background .5s ease-out;
+}
+.Tensecdung:focus-within {
+  background: url("../assets/images/10secdungbackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
+}
+
+.UniAI {
+  background: grey;
+  transition: background .5s ease-out;
+}
+.UniAI:focus-within {
+  background: url("../assets/images/uniAIbackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
+}
+
+.HSGA {
+  background: grey;
+  transition: background .5s ease-out;
+}
+.HSGA:focus-within {
+  background: url("../assets/images/hsgabackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
 }
 
 .botwcooking {
@@ -36,9 +77,8 @@ body {
   transition: background .5s ease-out;
 }
 .botwcooking:focus-within{
-  background: url("../assets/images/vitriolicbackground.png") center no-repeat;
+  background: url("../assets/images/botwbackground.png") center no-repeat;
   background-size: cover;
-
   transition: background .5s ease-in;
 }
 
