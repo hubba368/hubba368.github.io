@@ -14,7 +14,7 @@ body {
     margin-bottom: 0;
     /*border-top: 1px dashed white;
     border-bottom: 1px dashed white;*/
-    background: grey;
+    //background: grey;
 }
 
 .card {
@@ -23,7 +23,7 @@ body {
 
 /*jumbotron backgrounds*/
 .vitrolic {
-  background-image: url("assets/images/vitrolicbackground.png") center no-repeat;
+  background: url("assets/images/vitrolicbackground.png") center no-repeat;
   background-size: cover;
 }
 
