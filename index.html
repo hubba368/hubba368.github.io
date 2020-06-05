@@ -59,6 +59,7 @@ title: Elliott Bowman
 												</div>
 												<div class="collapse" id="modpanel1">
 													<div class="pt-3">
+														<a href="https://github.com/hubba368/RimWorldImmersiveResearch" target="_blank" class="btn btn-lg custom_button btn_black" >View Source on GitHub</a>
 														<p>Developed in combination of C# and XML, Immersive-ish Research was designed as a complete overhaul of the original game's research mechanic, adding a new level of immersion and difficulty to the game.</p>
 														<p>This was a substantial project to develop, as I had to spend a lot of time understanding an already existed codebase, and to also make sure that I adhered to it in my own project. I made usage of the Harmony Library to alter the functionality of the original codebase at runtime, and I also used XPath to modify existing XML schema that Rimworld uses to store various things, such as buildings and characters.</p>
 														<p>To adhere to an acceptable level of mod compatibility with other created mods, I used every effort to limit the usage of Harmony and XPath patching, and opted to derive as much functionality as possible from existing classes.</p>
@@ -144,6 +145,7 @@ title: Elliott Bowman
 										</div>
 										<div class="collapse" id="gamepanel2">
 											<div class="pt-3">
+												
 												<p>Vitriolic was developed in my final year group project module, where myself and 10 other students from both the Computer Games Programming and Computer Games Modelling and Animation courses, designed and developed the game completely from scratch.</p>
 												<p>The game itself was developed for PC in Unreal Engine 4, with a mixture of C++ and UE4 Blueprints. We managed to win the 'Playground Games Best Game Award' and the 'Best Art Direction' awards at the Games@Derby Expo 2018.</p>
 												<p>My role in the project consisted of programming various user interface and intermediate components, along with a few gameplay elements. As me and most of the other programmers were new to Unreal Engine 4, we all decided to develop most of the game with Unreal's Blueprint system. However, some of the features I developed were made with C++.</p>
@@ -206,6 +208,7 @@ title: Elliott Bowman
 										</div>
 										<div class="collapse" id="gamepanel3">
 											<div class="pt-3">
+												<a href="https://github.com/hubba368/10SecondDungeon" target="_blank" class="btn btn-lg custom_button btn_black" >View Source on GitHub</a>	
 												<p>Developed for Winter UE4Jam 2019, 10 Second Dungeon is an FPS Arcade, ‘Semi-Roguelite’ game made within 5 days. The game was developed in UE4 4.18, with a mixture of C++ and Blueprint. I decided to develop this game after wanting to expand my knowledge of C++ within UE4. I learned a lot from this project, which is discussed in a short postmortem I wrote below.</p>
 												<br>
 												<h5 style="text-align: center">Technical Features</h5>
@@ -233,7 +236,23 @@ title: Elliott Bowman
 												<h5 style="text-align: center">What went... mostly right</h5>
 												<h5 style="text-align: center">Modifier System</h5>
 												<p>I think the implementation I initially went for here works well, in that modifiers are checked and applied from a singleton class, and are also applied at the start of each level. However, I should’ve sticked to a more top Down approach, as I should’ve had some kind of Manager class for handling the AI enemies, which currently have no modifiers applied to them, and all of the player’s potential modifiers, which are split between ‘static’ modifiers, i.e. Health and move speed, and the bullet modifiers.</p>
-
+												<h5 style="text-align: center">Interactable/Throwable Objects</h5>
+												<p>Interactable Objects was probably the section of the development of the game that took me the longest. They work like this:</p>
+												<code>
+													Check if player is hovering over it with the mouse by tracing a line<br>
+													If player is hovering and not already holding something, attach it to the players character object<br>
+													If player is hovering and not already holding something, attach it to the players character object<br>
+													If player throws the item, detach it from the player and set its velocity to straight ahead<br>
+													Destroy on contact with anything (and call TakeDamage on enemy if hit)																																							
+												</code>
+												<p>Although they work as intended in the psuedocode above, they also had bugs I was unable to fix on time, such as destroying itself if an enemy gets too close if the player is holding an item already. Also, players arent really inclined to use them, since the players main weapon is much better overall.</p>
+												<h5 style="text-align: center">What went wrong</h5>
+												<h5 style="text-align: center">Level Generation</h5>
+												<p>Random generation does not work very well, mainly because I decided to make it so objects and enemies are spawned at specific spawn points, chosen at random on creation time of the level. I went for this approach to save time for the Game Jam itself. It went wrong because the levels are very similar each time, with only minor differences in enemy placement when you advance to later levels.</p>
+												<h5 style="text-align: center">Time/Resource Management</h5>
+												<p>Another downside of the development was my overall management of time and resources. Although I can give myself some heavy leeway, first to being new to using C++ in UE4 to such a large extent, and also the length of the game jam itself. However, there were some areas of development where I would take too long to finish, such as developing the interactable objects, which took almost an entire day to finish.  Next time, now that I am more knowledgeable in UE4’s C++ syntax, I can more easily plan out tasks so that I do not take too long to complete them.</p>
+												<h5 style="text-align: center">Main Game Loop</h5>
+												<p>The main gameplay loop of the game itself is another area where I failed. However, this can only be attributed to the other areas of the game that did not work very well either.</p>
 											</div>
 										</div>
 									</div>
@@ -272,6 +291,7 @@ title: Elliott Bowman
 										</div>
 										<div class="collapse" id="gamepanel4">
 											<div class="pt-3">
+												<a href="https://github.com/hubba368/GameBehaviour-SuperFlySprayer" target="_blank" class="btn btn-lg custom_button btn_black" >View Source on GitHub</a>
 												<p>For my final year module 'Game Behaviour', we were tasked with implementing physics and AI components within a game setting. With this in mind, I created the game 'Super Fly Sprayer', a 'horde mode' style game that was influenced by Super Smash Bros. The game features 2D Rigidbody physics along with AABB collision, and a robust A* pathfinding solution for the NPCs of the game.</p>
 												<p>We were tasked with implementing our systems to be independent of existing engine systems. As I was using Unity, this meant I had to create my own Rigidbody and Pathfinding classes. We did not however have to implement our own frame updating function.</p>
 												<br>
@@ -347,6 +367,8 @@ title: Elliott Bowman
 												</div>
 												<div class="collapse" id="softpanel1">
 													<div class="pt-3">
+														<a href="https://github.com/hubba368/HSGA" target="_blank" class="btn btn-lg custom_button btn_black" >View Source on GitHub</a>
+														<a href="assets/DissertationCurrentFINAL.pdf" download="HSGAResearchPaper" target="_blank" class="btn btn-lg custom_button btn_black" >View Dissertation PDF</a>
 														<p>For my final year Independent Study, I decided to develop a Genetic Algorithm that would have the ability to generate valid decks for the game Hearthstone, with the end goal of the algorithm generating solutions with an increasing number of wins over time, along with a secondary goal of the decks being balanced and varied, much like a human-designed deck would be.</p> 
 														<p>The algorithm itself, along with it's various GUI components, were developed in C#. In order to retrieve the results, I used an open source Java implementation of the game, developed by Github user demilich1. My final results showed promise, with some 'runs' of the algorithm gaining a decent number of wins over time. However, there would need to be further improvements to the algorithm and the approach, to see if more refined results could be reached.</p>
 														<p></p>
@@ -425,6 +447,7 @@ title: Elliott Bowman
 												</div>
 												<div class="collapse" id="otherpanel1">
 													<div class="pt-3">
+														<a href="https://github.com/hubba368/UE4-BOTWCookingSystem" target="_blank" class="btn btn-lg custom_button btn_black" >View Source on GitHub</a>
 														<p>Developed both as a learning experience and as an extendable crafting system that I can then adapt into future projects.</p>
 														<br>
 														<h5 style="text-align: center">Technical Features</h5>
