@@ -60,12 +60,10 @@ ol.carousel-indicators li.active {
   background: grey;
 }
 
-.hr {
-  border: 0px solid grey;
-  border-radius: 5px;
-  height: 50px;
+.divider {
+  fill: grey;
+  height: 70px;
   width: 100%;
-  background-image: linear-gradient(green, grey);
 }
 .top_container {
   background-size: cover;
