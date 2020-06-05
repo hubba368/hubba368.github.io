@@ -6,6 +6,12 @@
 <script src="assets/js/youtube-optimise.js"></script>
 
 <script>
+    $(document).on('click', 'button[data-target]', function() {
+        var $this = $(this),
+            target = $($this.data('target'))
+    });
+
+
         $(function (btnID) {
             var id = "." + btnID;
             console.log(id);
