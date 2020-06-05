@@ -336,7 +336,7 @@ title: Elliott Bowman
 																	<span class="badge badge-dark">UE4</span>
 																</h5>	
 																<p>An attempt at replicating the Cooking mechanics from The Legend of Zelda: Breath Of The Wild in UE4.</p>
-																<a href="" id="botwcooking" class="btn btn-lg custom_button btn_black" data-toggle="collapse" data-target="#otherpanel1">Read more...</a>
+																<a href="" id="botw" class="btn btn-lg custom_button btn_black" data-toggle="collapse" data-target="#otherpanel1">Read more...</a>
 															</div>
 															<div class="col-sm-4 my-auto desktop_only">
 																<img src="assets/images/botw1.png" height="150px" class="rounded float-right">
@@ -374,9 +374,10 @@ title: Elliott Bowman
 
 <script>
 $(function (btnID) {
-	$(btnID).click(function(){
-		var id = "." + btnID;
-		var otherID = id + "2";
+	var id = "." + btnID;
+	$(id).click(function(){
+		var temp = id + "cooking";
+		var otherID = temp + "2";
 		$(id).switchClass("id", "otherID");
 		$(otherID).switchClass("otherID", "id");
 	});
