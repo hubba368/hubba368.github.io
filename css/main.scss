@@ -23,21 +23,23 @@ body {
 
 /*jumbotron backgrounds*/
 .vitriolic {
+  background: grey;
+
+}
+.vitriolic:focus-within {
   background: url("../assets/images/vitriolicbackground.png") center no-repeat;
   background-size: cover;
-}
-
-.vitriolic:focus-within {
-background: grey
 }
 
 .botwcooking {
   background: grey;
+  transition: background .5s ease-out;
 }
-
 .botwcooking:focus-within{
   background: url("../assets/images/vitriolicbackground.png") center no-repeat;
   background-size: cover;
+
+  transition: background .5s ease-in;
 }
 
 /*carousels*/
