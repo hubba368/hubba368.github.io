@@ -23,12 +23,12 @@ body {
 
 /*jumbotron backgrounds*/
 .vitrolic {
-  background: none;
+  background-image: url("assets/images/vitrolicbackground.png") center no-repeat;
+  background-size: cover;
 }
 
 .vitriolic:focus-within {
-  background-image: url("assets/images/vitrolicbackground.png") center no-repeat;
-  background-size: cover;
+background: grey
 }
 
 .botwcooking {
