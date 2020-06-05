@@ -20,10 +20,7 @@ title: Elliott Bowman
 	<section id="main_section">
 
 			<h1 class="section_title" style="text-align:center;">
-				<svg viewBox="0 0 100 100" preserveAspectRatio="none" class="divider">
-					<path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
-				</svg>
-				<div class="row"><h1 style="text-align:center;">Mods</h1></div>				
+				Mods;		
 			</h1>
 	
 			<div id="modCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
@@ -60,7 +57,7 @@ title: Elliott Bowman
 														</div>
 													</div>
 												</div>
-												<div class="collapse" id="panel1">
+												<div class="collapse" id="modpanel1">
 													<div class="pt-3">
 														<p>Developed in combination of C# and XML, Immersive-ish Research was designed as a complete overhaul of the original game's research mechanic, adding a new level of immersion and difficulty to the game.</p>
 														<p></p>
@@ -118,7 +115,7 @@ title: Elliott Bowman
 															<span class="badge badge-dark">UE4 BP</span>
 														</h5>									
 														<p> Vitriolic is a Top Down Hack'n'Slash singleplayer game set in a Cyberpunk world, developed with 10 other students.</p>
-														<a href="" class="btn btn-lg custom_button btn_black" data-toggle="collapse" data-target="#panel2">Read more...</a>
+														<a href="" class="btn btn-lg custom_button btn_black" data-toggle="collapse" data-target="#panel2" onclick="showBackground(vitriolic)">Read more...</a>
 													</div>
 													<div class="col-sm-4 my-auto desktop_only">
 														<img src="assets/images/vitriolic1.png" height="150px" class="rounded float-right">
@@ -126,7 +123,7 @@ title: Elliott Bowman
 												</div>
 											</div>
 										</div>
-										<div class="collapse" id="panel2">
+										<div class="collapse" id="gamepanel2">
 											<div class="pt-3">
 												<p>Vitriolic was developed in my final year group project module, where myself and 10 other students from both the Computer Games Programming and Computer Games Modelling and Animation courses, designed and developed the game completely from scratch.</p>
 												<p>The game itself was developed for PC in Unreal Engine 4, with a mixture of C++ and UE4 Blueprints. We managed to win the 'Playground Games Best Game Award' and the 'Best Art Direction' awards at the Games@Derby Expo 2018.</p>
@@ -171,7 +168,7 @@ title: Elliott Bowman
 												</div>
 											</div>
 										</div>
-										<div class="collapse" id="panel3">
+										<div class="collapse" id="gamepanel3">
 											<div class="pt-3">
 												<p>The game itself was developed for PC in Unreal Engine 4, with a mixture of C++ and UE4 Blueprints. We managed to win the 'Playground Games Best Game Award' and the 'Best Art Direction' awards at the Games@Derby Expo 2018.</p>
 												<div class="row">
@@ -214,7 +211,7 @@ title: Elliott Bowman
 												</div>
 											</div>
 										</div>
-										<div class="collapse" id="panel4">
+										<div class="collapse" id="gamepanel4">
 											<div class="pt-3">
 												<p>For my final year module 'Game Behaviour', we were tasked with implementing physics and AI components within a game setting. With this in mind, I created the game 'Super Fly Sprayer', a 'horde mode' style game that was influenced by Super Smash Bros. The game features 2D Rigidbody physics along with AABB collision, and a robust A* pathfinding solution for the NPCs of the game.</p>
 												<div class="row">
@@ -279,7 +276,7 @@ title: Elliott Bowman
 														</div>
 													</div>
 												</div>
-												<div class="collapse" id="panel1">
+												<div class="collapse" id="softpanel1">
 													<div class="pt-3">
 														<p>For my final year Independent Study, I decided to develop a Genetic Algorithm that would have the ability to generate valid decks for the game Hearthstone, with the end goal of the algorithm generating solutions with an increasing number of wins over time, along with a secondary goal of the decks being balanced and varied, much like a human-designed deck would be.</p> 
 														<p>The algorithm itself, along with it's various GUI components, were developed in C#. In order to retrieve the results, I used an open source Java implementation of the game, developed by Github user demilich1. My final results showed promise, with some 'runs' of the algorithm gaining a decent number of wins over time. However, there would need to be further improvements to the algorithm and the approach, to see if more refined results could be reached.</p>
@@ -347,7 +344,7 @@ title: Elliott Bowman
 														</div>
 													</div>
 												</div>
-												<div class="collapse" id="panel1">
+												<div class="collapse" id="otherpanel1">
 													<div class="pt-3">
 														<p>Developed both as a learning experience and as an extendable crafting system that I can then adapt into future projects.</p>
 														<p></p>
@@ -374,6 +371,18 @@ title: Elliott Bowman
 				</a>			
 			</div>
 	  </section>
+
+<script>
+function showBackground(imgID) {
+var img = document.getElementById(imgID);
+if(img.style.display == "none") {
+	img.style.display = "block";
+} else {
+	img.style.display = "none";
+}
+}
+</script>
+
 </section>
 
   
