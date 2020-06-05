@@ -5,6 +5,19 @@
 <script src="assets/js/scrollreveal.min.js"></script>
 <script src="assets/js/youtube-optimise.js"></script>
 
+<script>
+        $(function (btnID) {
+            var id = "." + btnID;
+            $(id).click(function(){
+                var temp = id + "cooking";
+                var otherID = temp + "2";
+                $(id).switchClass("id", "otherID");
+                $(otherID).switchClass("otherID", "id");
+            });
+        });
+        </script>
+
+
 <div class ="container" style="background: grey">
     <div class="col-md-12">
         <br>
