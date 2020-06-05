@@ -22,6 +22,9 @@ body {
 }
 
 /*jumbotron backgrounds*/
+.vitrolic {
+  background: none;
+}
 
 .vitriolic:focus-within {
   background: url("assets/images/vitrolicbackground.png") center no-repeat;
@@ -34,6 +37,8 @@ body {
 
 .botwcooking:focus-within{
   background: red;
+  background: url("assets/images/vitrolicbackground.png") center no-repeat;
+  background-size: cover;
 }
 
 /*carousels*/
