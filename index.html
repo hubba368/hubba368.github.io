@@ -20,7 +20,7 @@ title: Elliott Bowman
 	<section id="main_section">
 
 			<h1 class="section_title" style="text-align:center;">
-				Mods;		
+				Mods		
 			</h1>
 	
 			<div id="modCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
@@ -336,7 +336,7 @@ title: Elliott Bowman
 																	<span class="badge badge-dark">UE4</span>
 																</h5>	
 																<p>An attempt at replicating the Cooking mechanics from The Legend of Zelda: Breath Of The Wild in UE4.</p>
-																<a href="" class="btn btn-lg custom_button btn_black" data-toggle="collapse" data-target="#otherpanel1">Read more...</a>
+																<a href="" id="botwcooking" class="btn btn-lg custom_button btn_black" data-toggle="collapse" data-target="#otherpanel1">Read more...</a>
 															</div>
 															<div class="col-sm-4 my-auto desktop_only">
 																<img src="assets/images/botw1.png" height="150px" class="rounded float-right">
@@ -373,14 +373,14 @@ title: Elliott Bowman
 	  </section>
 
 <script>
-function showBackground(imgID) {
-var img = document.getElementById(imgID);
-if(img.style.display == "none") {
-	img.style.display = "block";
-} else {
-	img.style.display = "none";
-}
-}
+$(function (btnID) {
+	$(btnID).click(function(){
+		var id = "." + btnID;
+		var otherID = id + "2";
+		$(id).switchClass("id", "otherID");
+		$(otherID).switchClass("otherID", "id");
+	});
+});
 </script>
 
 </section>
