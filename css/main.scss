@@ -14,7 +14,8 @@ body {
     margin-bottom: 0;
     /*border-top: 1px dashed white;
     border-bottom: 1px dashed white;*/
-    //background: grey;
+    //background-size: cover;
+    background: #404040;
 }
 
 .card {
@@ -23,7 +24,7 @@ body {
 
 /*jumbotron backgrounds*/
 .vitriolic {
-  background: grey;
+  background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
 .vitriolic:focus-within {
@@ -33,7 +34,7 @@ body {
 }
 
 .rimworld {
-  background: grey;
+  background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
 .rimworld:focus-within {
@@ -43,7 +44,7 @@ body {
 }
 
 .Tensecdung {
-  background: grey;
+  background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
 .Tensecdung:focus-within {
@@ -53,7 +54,7 @@ body {
 }
 
 .UniAI {
-  background: grey;
+  background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
 .UniAI:focus-within {
@@ -63,7 +64,7 @@ body {
 }
 
 .HSGA {
-  background: grey;
+  background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
 .HSGA:focus-within {
@@ -73,7 +74,7 @@ body {
 }
 
 .botwcooking {
-  background: grey;
+  background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
 .botwcooking:focus-within{
@@ -96,7 +97,7 @@ a.carousel-control-next {
 }
 
 ol.carousel-indicators li {
-  background: white;
+  background: grey;
   height:24px;
 }
 
@@ -122,7 +123,7 @@ ol.carousel-indicators li.active {
 /*other*/
 .section_title {
   margin-top: 50px;
-  background: grey;
+  background: rgb(70, 69, 69);
 }
 
 .divider {
