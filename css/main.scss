@@ -5,6 +5,7 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
+  background: grey;
 }
 
 /*bootstrap overrides */
@@ -101,8 +102,22 @@ ol.carousel-indicators li {
 }
 
 ol.carousel-indicators li.active {
-  background: black;
+  background: rgb(83, 180, 240);
   height:24px;
+}
+
+/*project galleries*/
+#vitriolicGallery {
+  img {
+    height: 75vw;
+    object-fit: cover;
+    @media (min-width: 576px) {
+      height: 35vw;
+    }
+    @media (min-width: 992px) {
+      height: 18vw;
+    }
+  }
 }
 
 /*other*/
