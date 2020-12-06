@@ -105,20 +105,6 @@ ol.carousel-indicators li.active {
   height:24px;
 }
 
-/*project galleries*/
-#vitriolicGallery {
-  img {
-    height: 75vw;
-    object-fit: cover;
-    @media (min-width: 576px) {
-      height: 35vw;
-    }
-    @media (min-width: 992px) {
-      height: 18vw;
-    }
-  }
-}
-
 /*other*/
 .section_title {
   margin-top: 50px;
