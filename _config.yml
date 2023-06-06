@@ -6,6 +6,7 @@ description:
 url:
 
 # Build settings
+markdown: kramdown
 permalink: :title/
 sass:
   sass_dir: css
