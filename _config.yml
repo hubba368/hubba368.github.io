@@ -3,10 +3,14 @@ title:
 email:
 author:
 description:
+baseurl: /Portfolio
 url: https://hubba368.github.io/
+data_dir: _data
+layouts_dir: _layouts
+includes_dir: _includes
 
 # Build settings
 markdown: kramdown
-permalink: :title/
+permalink: :title:output_ext
 sass:
   sass_dir: css
