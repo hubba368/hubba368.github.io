@@ -33,11 +33,11 @@ body {
   transition: background .5s ease-in;
 }
 
-.rimworld {
+/*.rimworld {
   background: rgb(70, 69, 69);
   transition: background .5s ease-out;
-}
-.rimworld:checked {
+}*/
+.rimworld {
   background: url("../assets/images/rimworldbackground.png") center no-repeat;
   background-size: cover;
   transition: background .5s ease-in;
