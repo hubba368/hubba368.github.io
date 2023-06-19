@@ -22,21 +22,39 @@ body {
   box-shadow: 0px 0px 20px rgba(0,0,0,1);
 }
 
-/*jumbotron backgrounds*/
-.vitriolic {
+/*jumbotron css*/
+.VIT {
   background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
-.vitriolic:checked {
+.RW {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+.TENDG {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+.HSGen {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+.BOTW {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+.UnivAI {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+
+/*project page backgrounds*/
+.vitriolic {
   background: url("../assets/images/vitriolicbackground.png") center no-repeat;
   background-size: cover;
   transition: background .5s ease-in;
 }
 
-/*.rimworld {
-  background: rgb(70, 69, 69);
-  transition: background .5s ease-out;
-}*/
 .rimworld {
   background: url("../assets/images/rimworldbackground.png") center no-repeat;
   background-size: cover;
@@ -44,40 +62,24 @@ body {
 }
 
 .Tensecdung {
-  background: rgb(70, 69, 69);
-  transition: background .5s ease-out;
-}
-.Tensecdung:checked {
   background: url("../assets/images/10secdungbackground.png") center no-repeat;
   background-size: cover;
   transition: background .5s ease-in;
 }
 
 .UniAI {
-  background: rgb(70, 69, 69);
-  transition: background .5s ease-out;
-}
-.UniAI:checked {
   background: url("../assets/images/uniAIbackground.png") center no-repeat;
   background-size: cover;
   transition: background .5s ease-in;
 }
 
 .HSGA {
-  background: rgb(70, 69, 69);
-  transition: background .5s ease-out;
-}
-.HSGA:checked {
   background: url("../assets/images/hsgabackground.png") center no-repeat;
   background-size: cover;
   transition: background .5s ease-in;
 }
 
 .botwcooking {
-  background: rgb(70, 69, 69);
-  transition: background .5s ease-out;
-}
-.botwcooking:checked{
   background: url("../assets/images/botwbackground.png") center no-repeat;
   background-size: cover;
   transition: background .5s ease-in;
