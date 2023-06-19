@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Immersive-ish Research
-permalink: https://hubba368.github.io/pages/ImmersiveishResearch
+permalink: https://hubba368.github.io/ImmersiveishResearch.html
 ---
 
 Developed in combination of C# and XML, Immersive-ish Research was designed as a complete overhaul of the original game's research mechanic, adding a new level of immersion and difficulty to the game. This was a substantial project to develop, as I had to spend a lot of time understanding an already existed codebase, and to also make sure that I adhered to it in my own project. I made usage of the Harmony Library to alter the functionality of the original codebase at runtime, and I also used XPath to modify existing XML schema that Rimworld uses to store various things, such as buildings and characters.
