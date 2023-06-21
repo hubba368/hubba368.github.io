@@ -94,8 +94,9 @@ body {
 
 /*carousels*/
 
-.carousel-item {
-  height: 100vh;
+.pageItem {
+  height: 500px;
+  object-fit: contain;
   overflow: hidden;
   width: 100%;
 }
