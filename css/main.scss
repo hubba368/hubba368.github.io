@@ -63,7 +63,7 @@ body {
 }
 
 .rimworld {
-  background: url("../assets/images/rimworldbackground.png") center no-repeat;
+  background: url("../assets/images/rimworldbackground.png") center no-repeat fixed;
   background-size: cover;
   transition: background .5s ease-in;
 }
