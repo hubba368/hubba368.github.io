@@ -4,8 +4,10 @@
 		<body>	
 			{% include header.html %}		
 			{% if page.bgImg %}
-				<div class="jumbotron rimworld">
-					<h1 class="text-primary" style="text-shadow: 2px 2px black; text-align:center">{{page.title}}</h1>
+				<div class="jumbotron {{page.test}}">
+					<div class="col-md-6">
+						<h1 class="text-primary" style="text-shadow: 2px 2px black; text-align:center">{{page.title}}</h1>
+					</div>
 				</div>		
 			{% else %}		
 				<div class="jumbotron pageBG">
