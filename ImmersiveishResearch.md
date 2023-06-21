@@ -10,9 +10,9 @@ images:
 bgImg: assets/images/rimworldbackground.png
 ---
 
-This was a substantial project to develop, as I had to spend a lot of time understanding an already existed codebase, and to also make sure that I adhered to it in my own project. 
+This was a substantial project to develop, as I had to spend a lot of time understanding an already existing codebase, and to also make sure that I adhered to it in my own project. 
 
-I made usage of the Harmony Library to alter the functionality of the original codebase at runtime, and I also used XPath to modify existing XML schema that Rimworld uses to store various things, such as buildings and characters.
+I made usage of the Harmony library to alter the functionality of the original codebase at runtime, and I also used XPath to modify existing XML schema that Rimworld uses to store various things, such as buildings and characters.
 
 To adhere to an acceptable level of mod compatibility with other created mods, I used every effort to limit the usage of Harmony and XPath patching, and opted to derive as much functionality as possible from existing classes. Immersive-ish Research almost completely overhauls the original research mechanics with an entirely new gameplay loop.
 
