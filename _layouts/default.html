@@ -4,14 +4,14 @@
 		<body>	
 			{% include header.html %}		
 			{% if page.bgImg %}
-				<div class="container-fluid rimworld">
+				<div class="jumbotron rimworld">
 				</div>		
 			{% else %}		
 				<div class="container-fluid pageBG">
 				</div>
 			{% endif %}
+			<br>
 			
-
 			<div class="container">
 				{% if page.preface %}
 					{{page.preface}}
@@ -47,6 +47,7 @@
 						</div>
 					</div>
 				{% endif %}
+				<br>
 				{{ content }}
 			</div>
 
