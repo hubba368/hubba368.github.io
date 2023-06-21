@@ -8,8 +8,8 @@ preface: |
 startImg: assets/images/IM1.png
 images:
     - assets/images/IM2.png
-    - assets/images/IM3.png
     - assets/images/IM4.png
+bgImg: assets/images/rimworldbackground.png
 ---
 
 
