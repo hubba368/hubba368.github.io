@@ -93,6 +93,13 @@ body {
 }
 
 /*carousels*/
+
+.carousel-item {
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
+}
+
 a.carousel-control-prev {
   height: 26%;
   top:33%;
