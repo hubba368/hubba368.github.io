@@ -14,11 +14,11 @@
 			{% endif %}
 			<br>
 			
-			<div class="container">
+			<div class="container-fluid">
 				{% if page.preface %}
 					{{page.preface}}
 				{% endif %}
-				<br>
+				
 				{% if page.images %}
 					<div id="imgCarousel" class="carousel slide" data-interval="false" data-ride="carousel" style="width:100%; height: 500px !important;">
 						<ol class="carousel-indicators">					
@@ -50,7 +50,10 @@
 					</div>
 				{% endif %}
 				<br>
-				{{ content }}
+				<div class="card mb-2 card-sm card-body my-auto bg-light">
+					{{ content }}
+				</div>
+				
 			</div>
 
             {% include footer.html %}

@@ -2,9 +2,7 @@
 layout: default
 title: Immersive-ish Research
 preface: |
-    Developed in combination of C# and XML, Immersive-ish Research was designed as a complete overhaul of the original game's research mechanic, adding a new level of immersion and difficulty to the game. This was a substantial project to develop, as I had to spend a lot of time understanding an already existed codebase, and to also make sure that I adhered to it in my own project. 
-    I made usage of the Harmony Library to alter the functionality of the original codebase at runtime, and I also used XPath to modify existing XML schema that Rimworld uses to store various things, such as buildings and characters.
-    To adhere to an acceptable level of mod compatibility with other created mods, I used every effort to limit the usage of Harmony and XPath patching, and opted to derive as much functionality as possible from existing classes. Immersive-ish Research almost completely overhauls the original research mechanics with an entirely new gameplay loop.
+    Developed in combination of C# and XML, Immersive-ish Research was designed as a complete overhaul of the original game's research mechanic, adding a new level of immersion and difficulty to the game. 
 startImg: assets/images/IM1.png
 images:
     - assets/images/IM2.png
@@ -12,7 +10,11 @@ images:
 bgImg: assets/images/rimworldbackground.png
 ---
 
+This was a substantial project to develop, as I had to spend a lot of time understanding an already existed codebase, and to also make sure that I adhered to it in my own project. 
 
+I made usage of the Harmony Library to alter the functionality of the original codebase at runtime, and I also used XPath to modify existing XML schema that Rimworld uses to store various things, such as buildings and characters.
+
+To adhere to an acceptable level of mod compatibility with other created mods, I used every effort to limit the usage of Harmony and XPath patching, and opted to derive as much functionality as possible from existing classes. Immersive-ish Research almost completely overhauls the original research mechanics with an entirely new gameplay loop.
 
 
 ##### Mod Features
