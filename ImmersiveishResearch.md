@@ -8,6 +8,7 @@ images:
     - assets/images/IM2.png
     - assets/images/IM4.png
 bgImg: assets/images/rimworldbackground.png
+test: rimworld
 ---
 
 This was a substantial project to develop, as I had to spend a lot of time understanding an already existing codebase, and to also make sure that I adhered to it in my own project. 
