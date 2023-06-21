@@ -16,7 +16,9 @@
 			
 			<div class="container">
 				{% if page.preface %}
+					<span style="color:white">
 					{{page.preface}}
+					</span>
 				{% endif %}
 				
 				{% if page.images %}
@@ -53,7 +55,9 @@
 			</div>
 
 			<div class="card mb-2 card-sm card-body pageTextbox">
-				{{ content }}
+				<span style="color:white">
+					{{ content }}
+				</span>
 			</div>
 
             {% include footer.html %}
