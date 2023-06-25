@@ -8,8 +8,10 @@ images:
     - assets/images/IM2.png
     - assets/images/IM4.png
 bgImg: assets/images/rimworldbackground.png
-test: rimworld
+class: rimworld
 ---
+
+{% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/RimWorldImmersiveResearch" %}
 
 This was a substantial project to develop, as I had to spend a lot of time understanding an already existing codebase, and to also make sure that I adhered to it in my own project. 
 
