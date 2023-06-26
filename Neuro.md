@@ -7,12 +7,12 @@ startImg: assets/images/msc1.png
 images:
 
 bgImg: assets/images/mscbackground.png
-class: MSC
+class: msc
 ---
 
 {% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/mscproj" %}
 
-{% include pageButton.html buttonName="View Dissertaion PDF" url="assets/mscDiss.pdf" %}
+{% include pageButton.html buttonName="View Dissertation PDF" url="assets/mscDiss.pdf" %}
 
 This project centered around Neuroevolution, an adjacent field of unsupervised machine learning, in a similar vein to more well known methods such as Monte Carlo Tree Search or Q Learning. How Neuroevolution differs is that it combines neural network implementations with Genetic Algorithms to allow the network to reconfigure its structure over time, instead of learning through using pre-made datasets.
 

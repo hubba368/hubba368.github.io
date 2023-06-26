@@ -7,7 +7,7 @@ startImg:
 images:
 
 bgImg: assets/images/rimworldbackground.png
-class: HSGA
+class: rimvention
 ---
 
 #### In Progress - 90% Complete

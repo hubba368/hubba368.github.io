@@ -7,7 +7,7 @@ startImg: assets/images/botw1.png
 images:
     - assets/images/botw2.png
 bgImg: assets/images/botwbackground.png
-class: UniAI
+class: botwcooking
 ---
 
 {% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/UE4-BOTWCookingSystem" %}

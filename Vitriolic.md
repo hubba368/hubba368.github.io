@@ -5,8 +5,8 @@ preface: |
     Vitriolic was developed in my final year group project module, where myself and 10 other students from both the Computer Games Programming and Computer Games Modelling and Animation courses, designed and developed the game completely from scratch.
 startImg: assets/images/vitriolic1.png
 images:
-    - assets/images/vitrolic2.png
-    - assets/images/vitrolic4.png
+    - assets/images/vitriolic3.png
+    - assets/images/vitriolic3.png
     - assets/images/vitriolic3.png
 bgImg: assets/images/vitriolicbackground.png
 class: vitriolic

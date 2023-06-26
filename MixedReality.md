@@ -9,7 +9,7 @@ images:
     - assets/images/mxvr3.gif
     - assets/images/mxvr4.gif
 bgImg: assets/images/mxvrbackground.png
-class: MXVR
+class: mixedreality
 ---
 
 {% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/MixedRealityVRProj" %}

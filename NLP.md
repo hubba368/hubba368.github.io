@@ -8,7 +8,7 @@ images:
     - assets/images/nlp2.png
     - assets/images/nlp3.png
 bgImg: assets/images/nlpbackground.png
-class: NLP
+class: nlp
 ---
 
 {% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/ChatMerchant" %}
