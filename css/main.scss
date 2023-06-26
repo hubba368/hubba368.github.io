@@ -131,13 +131,17 @@ body {
 
 /*carousels*/
 
-.pageItem {
+.pageItemDynamic {
   height: 100vh;
+}
+
+.pageItemStatic {
+  height: 500px;
 }
 
 .pageImage {
   position: absolute;
- 
+  top:50%;
   left:50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);

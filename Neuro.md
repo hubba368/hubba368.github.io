@@ -3,10 +3,10 @@ layout: default
 title: Neuroevolved agents in Hearthstone
 preface: |
     For my MSc Comp Sci & AI thesis, I designed and developed a Neuroevolution program that could train and test agents for the game Hearthstone, with multiple designed agent opponents.
-startImg: assets/images/msc1.png
+startImg: assets/images/msc1.PNG
 images:
 
-bgImg: assets/images/mscbackground.png
+bgImg: assets/images/mscbackground.PNG
 class: msc
 ---
 

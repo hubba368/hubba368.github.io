@@ -3,11 +3,11 @@ layout: default
 title: ChatMerchant - Natural Language Processing Game
 preface: |
     A text-based game about convincing customers to buy things using Natural Language Processing for immersive input and gameplay.
-startImg: assets/images/nlp1.png
+startImg: assets/images/nlp1.PNG
 images:
-    - assets/images/nlp2.png
-    - assets/images/nlp3.png
-bgImg: assets/images/nlpbackground.png
+    - assets/images/nlp2.PNG
+    - assets/images/nlp3.PNG
+bgImg: assets/images/nlpbackground.PNG
 class: nlp
 ---
 
