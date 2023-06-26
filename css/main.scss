@@ -147,7 +147,7 @@ body {
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   max-height: 800px;
-  width: auto;
+  max-width: 100%;
 }
 
 a.carousel-control-prev {
