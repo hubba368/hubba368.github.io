@@ -3,15 +3,16 @@ layout: default
 title: Rimvention
 preface: |
     A Rimworld mod inspired by the Invention skill from Runescape, which centers around deconstructing items into arbitrary parts that can later be recombined to produce special effects.
-startImg: assets/images/hsga1.png
+startImg:
 images:
-    - assets/images/hsga2.png
-    - assets/images/hsga3.png
-bgImg: assets/images/hsgabackground.png
+
+bgImg: 
 class: HSGA
 ---
 
 #### In Progress - 90% Complete
+
+{% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/Rimvention" %}
 
 As a follow-up to my previous mod, Immersive-ish Research, Rimvention is a substantial mod that adds a completely new gameplay mechanic adjacent to the built-in ones. As I had gained experience in creating mods for Rimworld previously, I spent much of the development time for Rimvention renovating old code and keeping scope creep in check.
 

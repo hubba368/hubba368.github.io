@@ -133,10 +133,8 @@ body {
 
 .pageItem {
   height: 500px;
-  object-fit: contain;
-  overflow: hidden;
-  width: 100%;
-  margin-left:50px;
+  background-size: cover;
+  background-position: center center;
 }
 
 a.carousel-control-prev {
