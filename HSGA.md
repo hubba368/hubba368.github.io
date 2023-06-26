@@ -13,6 +13,8 @@ class: HSGA
 
 {% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/HSGA" %}
 
+{% include pageButton.html buttonName="View Dissertaion PDF" url="assets/DissertationCurrentFINAL.pdf" %}
+
 The algorithm itself, along with it's various GUI components, were developed in C#. In order to retrieve the results, I used an open source Java implementation of the game, developed by Github user demilich1. My final results showed promise, with some 'runs' of the algorithm gaining a decent number of wins over time. However, there would need to be further improvements to the algorithm and the approach, to see if more refined results could be reached.
 
 ##### Features

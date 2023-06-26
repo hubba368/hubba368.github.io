@@ -23,14 +23,14 @@ To adhere to an acceptable level of mod compatibility with other created mods, I
 
 ##### Mod Features
 
-###### Experiment System
+###### **Experiment System**
 * A complete overhaul of the vanilla research mechanics.
 * Discovering research costs resources and time.
 * Specific topics and resource costs can be chosen to narrow down potential discoveries.
 
-###### Education and 'Brain Drain' Mechanic
+###### **Education and 'Brain Drain' Mechanic**
 * Colonists need to learn education topics to keep their collective knowledge secure.
 * Losing colonists can cause the colony to lose knowledge and progress.
 
-###### Ancient Datadisks
+###### **Ancient Datadisks**
 * Locked datadisks that can be discovered and opened for monetary or research value, and can also have random flavour text.

@@ -12,7 +12,7 @@ class: UniAI
 
 {% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/GameBehaviour-SuperFlySprayer" %}
 
-For my final year module 'Game Behaviour', we were tasked with implementing physics and AI components within a game setting. With this in mind, I created the game 'Super Fly Sprayer', a horde mode style game that was influenced by Super Smash Bros. The game features 2D Rigidbody physics along with AABB collision, and a robust A* pathfinding solution for the NPCs of the game.
+For my undergraduate final year module 'Game Behaviour', we were tasked with implementing physics and AI components within a game setting. With this in mind, I created the game 'Super Fly Sprayer', a horde mode style game that was influenced by Super Smash Bros. The game features 2D Rigidbody physics along with AABB collision, and a robust A* pathfinding solution for the NPCs of the game.
 
 We were tasked with implementing our systems to be independent of existing engine systems. As I was using Unity, this meant I had to create my own Rigidbody and Pathfinding classes. We did not however have to implement our own frame updating function.
 

@@ -18,16 +18,16 @@ My role in the project consisted of programming various user interface and inter
 
 ##### My Contributions
 
-###### Entirety of player's HUD
+###### **Entirety of player's HUD**
 * Health and Ability bars with required effects.
 * Dynamic combo counter that appears when necessary.
 * Tooltips for weapon swapping and entering certain areas.
 * Screen FX for low health and death screens.
 * Screen transitions.
 
-###### Interactable Keypad Puzzle and its accompanying UI
+###### **Interactable Keypad Puzzle and its accompanying UI**
 * Randomly generated 4 digit code that is displayed in game as an environment puzzle.
 * Fully integrated with controller input, as developed by another team member.
 
-###### Asynchronous loading between scenes
+###### **Asynchronous loading between scenes**
 * Main Menu and Loading screen scenes, with animated loading sprites.
