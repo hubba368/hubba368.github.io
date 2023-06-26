@@ -132,7 +132,7 @@ body {
 /*carousels*/
 
 .pageItem {
-  height: auto;
+  height: 100vh;
 }
 
 .pageImage {
@@ -142,7 +142,7 @@ body {
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  max-height: 500px;
+  max-height: 800px;
   width: auto;
 }
 
