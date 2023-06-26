@@ -55,6 +55,22 @@ body {
   background: rgb(70, 69, 69);
   transition: background .5s ease-out;
 }
+.RIM {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+.MSC {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+.MXVR {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
+.NLP {
+  background: rgb(70, 69, 69);
+  transition: background .5s ease-out;
+}
 
 /*project page backgrounds*/
 .vitriolic {
@@ -88,6 +104,26 @@ body {
 }
 
 .botwcooking {
+  background: url("../assets/images/botwbackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
+}
+.rimvention {
+  background: url("../assets/images/botwbackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
+}
+.mixedreality {
+  background: url("../assets/images/botwbackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
+}
+.nlp {
+  background: url("../assets/images/botwbackground.png") center no-repeat;
+  background-size: cover;
+  transition: background .5s ease-in;
+}
+.msc {
   background: url("../assets/images/botwbackground.png") center no-repeat;
   background-size: cover;
   transition: background .5s ease-in;

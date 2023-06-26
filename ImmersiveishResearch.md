@@ -12,6 +12,7 @@ class: rimworld
 ---
 
 {% include pageButton.html buttonName="View On Github" url="https://github.com/hubba368/RimWorldImmersiveResearch" %}
+{% include pageButton.html buttonName="View On Steam Workshop" url="https://steamcommunity.com/sharedfiles/filedetails/?id=1732571153" %}
 
 This was a substantial project to develop, as I had to spend a lot of time understanding an already existing codebase, and to also make sure that I adhered to it in my own project. 
 
