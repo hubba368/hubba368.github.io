@@ -1,0 +1,39 @@
+
+
+// css for main page preview slides
+.postPreview {
+
+    height: 24rem;
+
+
+    padding: 1.25rem 1.25rem 2.5rem;
+    box-sizing: border-box;
+
+    .internal {
+        margin-left: auto;
+        margin-right: auto;
+    
+        overflow: hidden;
+    
+        border-radius: 0.25rem;
+        li:not:first-child {
+            margin-top: 5px;
+        }
+
+    
+        .swiper {
+            height: 28rem;
+        }
+
+        .swiper-slide{
+            align-content: center;
+        }
+    
+        img {
+            object-fit: cover;
+        }
+
+    
+
+    }
+}

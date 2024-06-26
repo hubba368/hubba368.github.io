@@ -1,0 +1,29 @@
+.postPreviewSmall{
+    .internal{
+        
+        overflow: hidden;
+        border-radius: 0.25rem;
+        box-sizing: border-box;
+        li:not:first-child{
+            margin-top: 5px;
+        }
+
+        img{
+            object-fit: cover;
+        }
+    }
+
+    .container {
+        width: 24rem;
+    }
+}
+
+.small-slides .swiper-slide{
+    width: 100%;
+    @media (min-width: 576px){
+        width: 50%;
+        @media(min-width: 1400px){
+            width: 40%;
+        }
+    }
+}
