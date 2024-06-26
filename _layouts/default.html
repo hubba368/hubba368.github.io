@@ -2,10 +2,14 @@
 	<html>
         {% include head.html %}
 		<body>	
-			{% include header.html %}		
+			{% include header.html %}	
+			
+		<main class="my-4">
+			
+			
 			{% if page.bgImg %}
-				<div class="jumbotron {{page.class}}">
-					<div class="container">
+				<div class="jumbotron"  style="background-image: url('{{page.bgImg}}');">			
+					<div class="container">						
 						<div class="row">
 							<div class="card mb-2 card-sm card-body my-auto" style="background:#404040">
 								<h1 class="text-primary" style="text-shadow: 2px 2px black; text-align:center">{{page.title}}</h1>
@@ -22,41 +26,43 @@
 			
 			<div class="container">
 				{% if page.preface %}
-					<span style="color:white">
+					<span style="color:white;">
 					{{page.preface}}
 					</span>
+					<br>
 					<br>
 				{% endif %}
 				
 				{% if page.images %}
-					<div id="imgCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
-						<ol class="carousel-indicators">					
-							<li data-target="#imgCarousel" data-slide-to="0" class="active"></li>
-							{% for image in page.images %}
-								<li data-target="#imgCarousel" data-slide-to="{{forloop.index+1}}"></li>
-							{% endfor %}
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active pageItemStatic">
-								<img class="pageImage" src="{{page.startImg}}">
-							</div>	
-
-							{% for image in page.images %}
-								<div class="carousel-item pageItemStatic">
-									<img class ="pageImage" src="{{image}}">
+				<section>
+					<div class="swiper images">
+						<div class="swiper-wrapper">
+							{% for img in page.images %}
+								<div class="swiper-slide">
+									<img src="{{img}}" class="img-fluid">
 								</div>
 							{% endfor %}
-							<!-- add carousel controls and extras-->
-							<a class="carousel-control-prev" href="#imgCarousel" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#imgCarousel" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>			
 						</div>
+						<div class="swiper-pagination"></div>
 					</div>
+				</section>
+				
+				<script>
+					var swiper = new Swiper('.images', {
+						direction: 'horizontal',
+						loop: true,
+						slidesPerView: 2,
+						spaceBetween: 30,
+						autoplay: {
+							delay: 10000,
+							disableOnInteraction: false,
+						},
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+					});
+				</script>
 				{% endif %}
 				<br>				
 			</div>
@@ -70,7 +76,7 @@
 					</span>
 				</div>
 			</div>
-
+		</main>
             {% include footer.html %}
 		</body>
 	</html>

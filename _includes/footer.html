@@ -1,24 +1,13 @@
-<script src="assets/js/jquery-3.7.0.min.js"></script>
-<!--<script src="assets/js/popper.min.js"></script>-->
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/parallax.min.js"></script>
-<script src="assets/js/scrollreveal.min.js"></script>
-<script src="assets/js/youtube-optimise.js"></script>
 
-<script>
-    
-</script>
 
-<style>body {background: grey}</style>
-
-<div class ="container" style="background: grey">
-    <div class="col-md-12">
-        <br>
+<div class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <br>
+    <div class="container">
         <h3>
             {% for item in site.data.settings.footer %}
             <a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" style="color:black" aria-hidden="true"></i></a>
             {% endfor %}
         </h3>
-        <br><br><br><br><br>
     </div>
+    <br><br><br><br><br>
 </div>

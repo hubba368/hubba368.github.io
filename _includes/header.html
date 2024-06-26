@@ -1,19 +1,32 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-<nav class="navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
-    <a class="navbar-brand top_jump supersmall_hide" href="https://hubba368.github.io/#">Elliott Bowman</a>
-    <ul class="nav ml-auto">
-        <li class="nav-item">
-            <a href="https://hubba368.github.io/#main_section" class="nav-link games_jump">Mods</a>
-        </li>
-        <li class="nav-item">
-            <a href="https://hubba368.github.io/#games_section" class="nav-link software_jump">Games</a>
-        </li>
-        <li class="nav-item">
-            <a href="https://hubba368.github.io/#software_section" class="nav-link mods_jump">Software</a>
-        </li>
-        <li class="nav-item">
-            <a href="https://hubba368.github.io/#other_section" class="nav-link mods_jump">Other</a>
-        </li>
-    </ul>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand mx-auto" href="{{ site.url }}">Elliott Bowman</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="{{ site.url }}" class="nav-link">Home</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="https://hubba368.github.io/#games_section" class="nav-link">Games</a>
+                </li>-->
+                <li><hr></li>
+                <li>
+                    <h3>
+                        {% for item in site.data.settings.footer %}
+                        <a href="{{ item.link }}"><i class="fa fa-{{ item.icon }}" style="color:black" aria-hidden="true"></i></a>
+                        {% endfor %}
+                    </h3>
+                </li>
+            </ul>
+        </div>
+
+        
+    </div>
 </nav>

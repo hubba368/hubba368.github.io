@@ -3,8 +3,8 @@ title:
 email:
 author:
 description:
-baseurl: /Portfolio
-url: https://hubba368.github.io/
+baseurl:
+url: https://hubba368.github.io
 data_dir: _data
 layouts_dir: _layouts
 includes_dir: _includes

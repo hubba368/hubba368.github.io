@@ -5,435 +5,104 @@ title: Portfolio
 
 <!DOCTYPE html>
 <html lang="en">
-<body>
-	<section class="jumbotron text-center" data-parallax="scroll" >
-		<div class="container">
-			<h1 class="text-primary" style="text-shadow: 2px 2px black; text-align:center">Elliott Bowman</h1>
+
+<header id="home_header" class="container pt-5 mt-5">
+
+	<div class="row">
+		<div class="col-sm">
+			<h1 class="title">Elliott<br>Bowman</h1>
+		</div>
+		<div class="col">
 			<h3 style="color:white; text-align:center">I am a Computer Games Programming Graduate from the University of Derby and a MSc Computer Science and AI graduate from the University of Nottingham.</h3>
 			<br>
 			<h5 style="color:white; text-align:center">I have a background in game programming, with a familarity in UE4 and Unity.</h5>
 		</div>
-	<section id="main_section">
-		<h1 class="section_title" style="color:white; text-align:center;">
-			Mods		
-		</h1>
+	</div>
+</header>
+	  
+<section class="container">
+	<div class="p-2">
+		<h1 style="color:white;">Featured Projects</h1>
+	</div>
+	<div class="swiper featured">
+		<div class="swiper-wrapper">
+			{% for page in site.pages %}
+				{% if page.featured %}
+					{% include postPreview.html %}
+				{% endif %}
+			{% endfor %}
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
 
-		<div id="modCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#modCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#modCarousel" data-slide-to="1"></li>
-				
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="jumbotron RW">
-						<div class="container">
-							<div class="row">
-								<div class="card mb-2 card-sm card-body my-auto">
-									<div class="accordion-panel-title collapsed">
-										<div class="container">
-											<div class="row">
-												<div class="col-sm-8 my-auto mobile_fullwidth">												
-													<h1>
-														Immersive-ish Research
-													<span class="badge badge-info">Solo Project</span>
-													</h1>
-													<h5>
-														<span class="badge badge-dark">C#</span>
-														<span class="badge badge-dark">XML</span>
-														<span class="badge badge-dark">Unity</span>
-													</h5>	
-													<p>An overhaul mod for the researching game mechanics of the sci-fi colony sim game 'Rimworld'.</p>
-													<a href="/ImmersiveishResearch.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-												</div>
-												<div class="col-sm-4 my-auto desktop_only">
-													<img src="assets/images/IM1.png" height="150px" class="rounded float-right">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-				<div class="carousel-item">
-					<div class="jumbotron RIM">
-						<div class="container">
-							<div class="row">
-								<div class="card mb-2 card-sm card-body my-auto">
-									<div class="accordion-panel-title collapsed">
-										<div class="container">
-											<div class="row">
-												<div class="col-sm-8 my-auto mobile_fullwidth">												
-													<h1>
-														Rimvention
-													<span class="badge badge-info">Solo Project</span>
-													</h1>
-													<h5>
-														<span class="badge bg-warning text-dark">In Progress</span>
-														<span class="badge badge-dark">C#</span>
-														<span class="badge badge-dark">XML</span>
-														<span class="badge badge-dark">Unity</span>
-													</h5>	
-													<p>A mod of the sci-fi colony sim game 'Rimworld', based on the Invention skill from Runescape.</p>
-													<a href="/rimvention.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-												</div>
-												<div class="col-sm-4 my-auto desktop_only">
-													<img src="" height="150px" class="rounded float-right">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- add carousel controls and extras-->
-				<a class="carousel-control-prev" href="#modCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#modCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>			
-			</div>
-			
-	  </section>
-	
-	  <section id="games_section">
-			<h1 class="section_title" style="color:white; text-align:center;">Games</h1>
-	
-			<div id="gameCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#gameCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#gameCarousel" data-slide-to="1"></li>
-					<li data-target="#gameCarousel" data-slide-to="2"></li>
-					<li data-target="#gameCarousel" data-slide-to="3"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="jumbotron VIT">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">
-														<h1>
-															Vitriolic
-															<span class="badge badge-info">University Project</span>
-														</h1>	
-														<h5>
-															<span class="badge badge-dark">UE4</span>
-															<span class="badge badge-dark">C++</span>
-															<span class="badge badge-dark">UE4 BP</span>
-														</h5>									
-														<p> A Top Down Hack'n'Slash singleplayer game set in a Cyberpunk world, developed with 10 other students.</p>
-														<a href="/Vitriolic.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="assets/images/vitriolic1.png" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>			
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron MXVR">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">												
-														<h1>
-															VR Project
-														<span class="badge badge-info">University Project</span>
-														</h1>
-														<h5>
-															<span class="badge badge-dark">C#</span>
-															<span class="badge badge-dark">XRTK</span>
-															<span class="badge badge-dark">Unity</span>
-														</h5>	
-														<p>A proof of concept VR game in the context of a Museum attraction.</p>
-														<a href="/MixedReality.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron TENDG">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">
-														<h1>
-															10 Second Dungeon
-															<span class="badge badge-info">Solo Project</span>
-														</h1>	
-														<h5>
-															<span class="badge badge-dark">UE4</span>
-															<span class="badge badge-dark">C++</span>
-															<span class="badge badge-dark">UE4 BP</span>
-														</h5>								
-														<p>An FPS Arcade, ‘Semi-Roguelite’ game made within 5 days for Winter UE4Jam 2019.</p>
-														<a href="/Tensecdung.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="assets/images/10dung1.png" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>								
-					</div>	
-					<div class="carousel-item">
-						<div class="jumbotron NLP">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">												
-														<h1>
-															ChatMerchant - NLP Game
-														<span class="badge badge-info">University Project</span>
-														</h1>
-														<h5>
-															<span class="badge badge-dark">Python</span>
-															<span class="badge badge-dark">NLTK</span>
-															<span class="badge badge-dark">Scikit-Learn</span>
-														</h5>	
-														<p>A small text-based game that uses Natural Language Processing in its game mechanics.</p>
-														<a href="/NLP.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>				
-				</div>	
-				<!-- add carousel controls and extras-->
-				<a class="carousel-control-prev" href="#gameCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				  </a>
-				  <a class="carousel-control-next" href="#gameCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				  </a>
-				
-			</div>
-			
-	  </section>     
-			
-	  <section id="software_section">
-		  <h1 class="section_title" style="color:white; text-align:center;">Software</h1>
-	
-		  	<div id="softwareCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#softwareCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#softwareCarousel" data-slide-to="1"></li>
-					
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="jumbotron MSC">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">												
-														<h1>
-															Neuroevolution in Hearthstone
-														<span class="badge badge-info">University Project</span>
-														</h1>
-														<h5>
-															<span class="badge badge-dark">Python</span>
-															<span class="badge badge-dark">NEAT-Python</span>
-														</h5>	
-														<p>A program to train and test Neuroevolved players for Hearthstone.</p>
-														<a href="/Neuro.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="jumbotron HSGen">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">												
-														<h1>
-															HearthStone Genetic Algorithm
-															<span class="badge badge-info">University Project</span>
-														</h1>
-														<h5>
-															<span class="badge badge-dark">C#</span>
-															<span class="badge badge-dark">JSON</span>
-															<span class="badge badge-dark">Java</span>
-														</h5>	
-														<p>A genetic algorithm that can create useable decks for Hearthstone.</p>
-														<a href="/HSGA.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="assets/images/hsga1.png" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- add carousel controls and extras-->
-				<a class="carousel-control-prev" href="#softwareCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#softwareCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>			
-			</div>
-	
-	  </section>
-	
-	  <section id="other_section">
-		  <h1 class="section_title" style="color:white; text-align:center">Other</h1>
-	
-		  <div id="otherCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#otherCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#otherCarousel" data-slide-to="1"></li>
-					<!--<li data-target="#gameCarousel" data-slide-to="2"></li>-->
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">						
-						<div class="jumbotron BOTW">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">												
-														<h1>
-															UE4 BOTW Cooking System
-															<span class="badge badge-info">Solo Project</span>
-														</h1>
-														<h5>
-															<span class="badge badge-dark">C++</span>
-															<span class="badge badge-dark">UE4 BP</span>
-															<span class="badge badge-dark">UE4</span>
-														</h5>	
-														<p>An attempt at replicating the Cooking mechanics from The Legend of Zelda: Breath Of The Wild in UE4.</p>
-														<a href="/BOTWCooking.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="assets/images/botw1.png" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+<script>
+	var swiper = new Swiper('.featured', {
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 50,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+</script>
+{% for page in site.pages %}
+	{% if page.featured %}
+		{% if page.images %}
+		<script>
+			var swiper2 = new Swiper('.featured{{page.class}}', {
+				direction: "vertical",
+				loop: true,
+				slidesPerView: 1,
+				mousewheel: true,
+				autoHeight: false,
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		</script>
+		{% endif %}
+	{% endif %}
+{% endfor %}
 
-					<div class="carousel-item">
-						<div class="jumbotron UnivAI">
-							<div class="container">
-								<div class="row">
-									<div class="card mb-2 card-sm card-body my-auto">
-										<div class="accordion-panel-title collapsed">
-											<div class="container">
-												<div class="row">
-													<div class="col-sm-8 my-auto mobile_fullwidth">
-														<h1>
-															Super Fly Sprayer - AI Project
-															<span class="badge badge-info">University Project</span>
-														</h1>	
-														<h5>
-															<span class="badge badge-dark">Unity</span>
-															<span class="badge badge-dark">C#</span>
-														</h5>								
-														<p>A set of pathfinding and physics implementations demonstrated inside of a small proof-of-concept game.</p>
-														<a href="/UniAI.html" class="btn btn-lg custom_button btn_black">Read more...</a>
-													</div>
-													<div class="col-sm-4 my-auto desktop_only">
-														<img src="assets/images/uniAI1.png" height="150px" class="rounded float-right">
-													</div>
-												</div>
-											</div>
-										</div>										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
+<body>
+	<section class="container">
+		<div class="p-2">
+			<h1 style="color:white;">Other Projects</h1>
+		</div>
+		<div class="swiper other small-slides p-5">
+			<div class="swiper-wrapper pb-12">
+				{% for page in site.pages %}
+				<div class="swiper-slide">
+					{% include postPreviewSmall.html %}
 				</div>
-				
-				<!-- add carousel controls and extras-->
-				<a class="carousel-control-prev" href="#otherCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#otherCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>			
+				{% endfor %}
 			</div>
-	  </section>
+			<div class="swiper-pagination"></div>
+		</div>
 	</section>
+	
+	<script>
+		var swiper = new Swiper('.other', {
+			direction: 'horizontal',
+			slidesPerView: 'auto',
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	</script>
 
 </body>
 </html>
